@@ -1,1 +1,2 @@
- this is a readme file for binary trees Project.
+# Binary Trees 
+Project of C Binary Trees
