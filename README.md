@@ -1,2 +1,2 @@
-#Binary Trees 
+#Binary Trees
 Project of C Binary Trees
