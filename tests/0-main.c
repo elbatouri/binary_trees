@@ -8,9 +8,9 @@
  */
 int main(void)
 {
-binary_tree_t *root;
+	binary_tree_t *root;
 
-root = binary_tree_node(NULL, 98);
+	root = binary_tree_node(NULL, 98);
 
 	root->left = binary_tree_node(root, 12);
 	root->left->left = binary_tree_node(root->left, 6);
