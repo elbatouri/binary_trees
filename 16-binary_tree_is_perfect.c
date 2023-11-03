@@ -3,17 +3,24 @@
 #include "binary_trees.h"
 
 /**
+ * height - calculates the height of certain subtree
+ * @node: a pointer to the node
+ *
+ * Return: the height of the currect subtree
+ */
+int height(const binary_tree_t *node)
+{
+	if (node == NULL)
+		return (0);
+	return (1 + height(node->left));
+}
+
+/**
  * binary_tree_is_perfect - checks if a tree is perfect
  * @tree: a pointer to the root of the tree
  *
  * Return: 1 if perfect or 0 if not
  */
-int height(const binary_tree_t *node)
-        {
-                if (node == NULL)
-                        return (0);
-                return 1 + height(node->left);
-        }
 
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
@@ -30,7 +37,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 		perfectl = binary_tree_is_perfect(tree->left);
 		perfectr = binary_tree_is_perfect(tree->right);
 
-		return perfectl && perfectr;
+		return (perfectl && perfectr);
 	}
 
 	return (0);
