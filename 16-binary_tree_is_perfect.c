@@ -12,7 +12,7 @@ int height(const binary_tree_t *node)
         {
                 if (node == NULL)
                         return (0);
-                return height(node->left);
+                return 1 + height(node->left);
         }
 
 int binary_tree_is_perfect(const binary_tree_t *tree)
