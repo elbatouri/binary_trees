@@ -36,8 +36,6 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 
 	leftheight = height(tree->left);
 	rightheight = height(tree->right);
-	if (leftheight == 0)
-		return (0);
 
 	if (leftheight == rightheight)
 	{
